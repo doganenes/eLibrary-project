@@ -1,7 +1,9 @@
 # eLibrary Project
 
-### Scenario: Added 10 books, 10 pages each, to the Library class.
+Scenario: Added 10 books, 10 pages each, to the Library class.
+
 ---
+
 * The pages of each book consist of numbers and page content.<br/>
 * Encapsulation was applied for each class and getter-setter methods were written.<br/>
 * Added the page number and content of each book in the test class.<br/>
