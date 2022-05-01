@@ -179,9 +179,6 @@ public class Test {
             System.out.println(library1.getBookByName("Book" + i).getName() + " | " + library1.getBookByName("Book" + i).getPageContent(i));
         }
 
-        // library'i on kitapla oluştur, 10 kitap ekle. kitapların her birini adlarıyla
-        // sorgulat ve contentlerini yazdır. 3.kitabın sadece 7.sayfadaki content yazdır
-        // her kitabın min 5 max 10 sayfası olsun.
 
 
     }
