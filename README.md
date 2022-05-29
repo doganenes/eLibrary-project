@@ -1,4 +1,4 @@
-# eLibrary Project
+# E-Library Project
 
 Scenario: Added 10 books, 10 pages each, to the Library class.
 
