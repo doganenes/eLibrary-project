@@ -7,7 +7,6 @@ public class Book {
     private String publisher;
     private int pageCount;
 
-    //empty constructor
     public Book() {
     }
 
@@ -18,7 +17,6 @@ public class Book {
         this.author = author;
         this.publisher = publisher;
     }
-
 
     public Page[] getPage() {
         return pages;
@@ -69,16 +67,10 @@ public class Book {
     }
 
     public void addPage(Page p1) {
-
         this.pages[p1.getPageCount() - 1] = p1;
-
     }
 
     public String getPageContent(int pageNum) {
-
         return pages[pageNum - 1].getPageContent();
-
     }
-
-
 }

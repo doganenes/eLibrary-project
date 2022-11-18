@@ -1,10 +1,8 @@
 public class Page {
-    // her bir sayfaya ait sayfa sayısı ve içeriği
 
     private String pageContent;
     private int pageCount;
 
-    // empty constructor
     public Page() {
     }
 
@@ -13,7 +11,6 @@ public class Page {
         this.pageContent = pageContent;
     }
 
-    // Getter - setter
     public String getPageContent() {
         return pageCount + "- " + pageContent;
     }

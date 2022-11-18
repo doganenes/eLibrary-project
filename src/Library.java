@@ -2,17 +2,17 @@ import java.util.*;
 
 public class Library {
 
-    private Book[] books; // her bir kitap Library class'ı içerisinde bir array içerisinde saklandı.
+    private Book[] books;
     private int arraySize;
     private int index;
 
     public Library() {
     }
 
-    public Library(int arraySize) { // library'in arraySize'ı parametre olarak verildi.
+    public Library(int arraySize) {
 
         this.arraySize = arraySize;
-        this.books = new Book[arraySize]; // constructor'da girilen arraySize ile kütüphanede kaç tane kitap barındıralacağı belirtilmiş oldu.
+        this.books = new Book[arraySize];
         this.index = 0;
     }
 
@@ -32,29 +32,26 @@ public class Library {
         this.arraySize = arraySize;
     }
 
-    public void addBookByIndex(Book book) { // isFull() metoduyla library'in içerisinin dolu olup olmadığı tespit edildi.
+    public void addBookByIndex(Book book) {
         if (!isFull()) {
             this.books[this.index] = book;
-            this.index++; // eğer dolu değilse girilen this.books ile books arrayini çağır ve this.books[this.index] ile oraya addBookByIndex metodundan gelen parametreyi ekle.
+            this.index++;
         } else
             System.out.println("Library is full so you can't add new book");
     }
 
     private boolean isFull() {
-
-        return ((this.arraySize) < (this.index)); // index değeri büyükse bu metod false değerini döner.
-
+        return ((this.arraySize) < (this.index));
     }
 
     public Book getBookByName(String bookName) {
 
         for (int i = 0; i < this.books.length; i++) {
-            if (books[i].getName().equals(bookName)) { // kitabın adını çağırır eğer metod çağrıldığında girilen parametre kitaplıkta yer alıyorsa.
-                return books[i]; // books[i].getName() ile library'de yer alan kitaplar döner.String olarak. Onu karşılaştırmak için equals metodu kullanıldı.
+            if (books[i].getName().equals(bookName)) {
+                return books[i];
             }
         }
         return null;
     }
-
 
 }
